@@ -15,7 +15,7 @@ class TaskRequest extends FormRequest
     {
         return [
             'task_name' => ['required', 'string', 'max:190'],
-            'description' => ['string']
+            'description' => ['nullable', 'string'],
         ];
     }
 }
